@@ -24,7 +24,14 @@ The first step of this project involved extracted the datasets from IMDb, cleani
 
 See the conceptual relational model of all the files extracted from IMDb. Note that this ER model is based on my interpretation and is unofficial.
 
+![original model](original_model.png)
 
+#### Table Descriptions
+- **title.basics**:Data related to all titles in IMDB database. Includes movies, tv show episodes, live action plays, etc.
+- **name.basics**: Data related to all individuals who have participated in the production of a title. Includes actors/actresses, writers, directors, costume designers, etc.
+- **title.principals**: Mapping table between the name.basics table and title.basics table. A record exists for every individual involved in a title.
+- **title.ratings**: Contains the average rating and number of votes for records in the "titles" Table. This is a one-to-one optional relationship, meaning an individual title could have a max of one record in the "ratings" table, but could not have one as well. Since this is a one-to-one relationship, these two tables should be combined.
+- **title.akas**: Contains all alternative titles for a local region/country for each unique record in "title.basics" table.
 
 ---
 ## Creating PostgreSQL database and Loading Cleaned Data
