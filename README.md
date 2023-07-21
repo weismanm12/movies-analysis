@@ -55,3 +55,13 @@ After the raw data was thoroughly cleaned and transformed, a PostgreSQL database
 
 ---
 ## Analyzing Movies Database via SQL and Python
+
+The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
+
+Please note that the below analysis does not contain any code. If you would like to see the extended analysis including the SQL and Python code, see the [analysis Jupyter Notebook](analysis.ipynb).
+
+### Selecting a Sample Dataset
+
+The movies contained in the `movies` database contains an extension number of movies, however, the awareness and accessibility of these films very greatly. This awareness/accessibility can be measured by the number of reviews a movie has received. See a histogram showing this distribution below.
+
+![hist of movie ratings](Analysis Visualizations/histogram_of_number_of_ratings.png)
