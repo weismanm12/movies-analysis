@@ -64,4 +64,9 @@ Please note that the below analysis does not contain any code. If you would like
 
 The movies contained in the `movies` database contains an extension number of movies, however, the awareness and accessibility of these films very greatly. This awareness/accessibility can be measured by the number of reviews a movie has received. See a histogram showing this distribution below.
 
-![hist of movie ratings](Analysis Visualizations/histogram_of_number_of_ratings.png)
+![hist of movie ratings](./Analysis%20Visualizations/histogram_of_number_of_ratings.png)
+
+<br />
+It can be seen that there is extreme variance in the number of ratings a movie has received, with the majority have less than 500 ratings. However, we are most interested in well-known productions on the opposite end of the spectrum. For this reason, only movies **within the top 10% in terms of the number of ratings a movie has received partitioned by the decade will be considered**. Partitioning by the decade helps account for the older movies receiving less ratings than newer movies.
+
+
