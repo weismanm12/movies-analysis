@@ -18,7 +18,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ---
 ## Extracting and Cleaning Raw Data with Python
 
-The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [imdb extraction and cleaning file](imdb_extraction_and_cleaning.ipynb).
+The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [imdb etl file](imdb_etl.ipynb).
 
 ### Raw Data ER Model
 
