@@ -1,0 +1,16 @@
+ranking,movie_title,release_year,num_ratings,avg_rating,decade_percentile
+1,The Shawshank Redemption,1994,2757458,9.3,1.00
+2,The Godfather,1972,1918724,9.2,1.00
+3,The Dark Knight,2008,2730429,9.0,1.00
+4,The Lord of the Rings: The Return of the King,2003,1893495,9.0,1.00
+5,Schindler's List,1993,1389703,9.0,1.00
+6,The Godfather Part II,1974,1305968,9.0,1.00
+7,12 Angry Men,1957,816928,9.0,1.00
+8,Pulp Fiction,1994,2117277,8.9,1.00
+9,Inception,2010,2423042,8.8,1.00
+10,Fight Club,1999,2195541,8.8,1.00
+11,Forrest Gump,1994,2144798,8.8,1.00
+12,The Lord of the Rings: The Fellowship of the Ring,2001,1921955,8.8,1.00
+13,The Lord of the Rings: The Two Towers,2002,1708842,8.8,1.00
+14,"The Good, the Bad and the Ugly",1966,779830,8.8,1.00
+15,The Matrix,1999,1965060,8.7,1.00
