@@ -34,7 +34,7 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 - **title.akas**: Contains all alternative titles for a local region/country for each unique record in "title.basics" table.
 
 ### Cleaning, Validation and Transformation Process
-Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning notebook](raw_data_cleaning.ipynb)
+Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning file](raw_data_cleaning.ipynb).
 
 ### Transformed ER Model
 
