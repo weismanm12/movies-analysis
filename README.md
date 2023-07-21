@@ -50,5 +50,8 @@ See a visual representation of the structure of the transformed data. This also 
 - **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 ---
 ## Creating PostgreSQL database and Loading Cleaned Data
+
+After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [database creation script[(database_creation_script.sql). The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [data loading notebook](data_loading.ipynb).
+
 ---
 ## Analyzing Movies Database via SQL and Python
