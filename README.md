@@ -49,7 +49,7 @@ See a visual representation of the structure of the transformed data. This also 
 - **genres**: Contains all distinct genres a movie can be tagged as.
 - **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 ---
-## Creating PostgreSQL database and Loading Cleaned Data
+## Creating PostgreSQL Database and Loading Cleaned Data
 
 After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [database creation script](database_creation_script.sql). The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [data loading notebook](data_loading.ipynb).
 
@@ -66,7 +66,54 @@ The movies contained in the `movies` database contains an extension number of mo
 
 ![hist of movie ratings](./Analysis%20Visualizations/histogram_of_number_of_ratings.png)
 
+It can be seen that there is extreme variance in the number of ratings a movie has received, with the majority have less than 500 ratings. However, we are most interested in well-known productions on the opposite end of the spectrum. For this reason, only movies **within the top 10\% in terms of the number of ratings a movie has received partitioned by the decade will be considered**. Partitioning by the decade helps account for the older movies receiving less ratings than newer movies.
+
+___
+
+### Movie Production Over Time
 <br />
-It can be seen that there is extreme variance in the number of ratings a movie has received, with the majority have less than 500 ratings. However, we are most interested in well-known productions on the opposite end of the spectrum. For this reason, only movies **within the top 10% in terms of the number of ratings a movie has received partitioned by the decade will be considered**. Partitioning by the decade helps account for the older movies receiving less ratings than newer movies.
+
+![movie_production](./Analysis%20Visualizations/movies_released_by_year.png)
+
+The line chart depicts movie production trends over time, highlighting significant developments around 1915, minimal change until the millennium, a steep decline during the Great Depression in 1929, and exponential growth from the 2000s. Notably, the COVID-19 pandemic caused a slight dip in 2020, impacting movie production in the subsequent years, which is gradually recovering to pre-pandemic levels.
+
+___
+
+### Movie Production by Genre
+
+![production_by_genre](./Analysis%20Visualizations/movies_released_by_genre.png)
+
+Genre production analysis reveals interesting insights into the movie industry's diversity. Drama leads with 28.1%, followed by Comedy (16.1%) and Action (9.1%). Crime and Romance genres hold nearly identical shares at 9.0% and 8.6%, respectively. Thriller and Adventure occupy significant portions with 7.8% and 6.4% each. Horror and Mystery equally share 6.4% of the film industry. Lastly, Biography contributes 3.0% to the cinematic world. These percentages showcase the filmmakers' diverse use of genres and creative abilities.
+<br />
+
+### Movies Production by Genre Pairs
+
+![production_by_genre pairs](./Analysis%20Visualizations/movies_released_by_genre_pairs.png)
+
+Any movie can have multiple genres, creating subgenres which consist of combinations of individual genres. Above we can see the popularity of these pairs in movie production. Among these, Drama frequently pairs with Romance, Comedy, and Thriller genres, creating engaging narratives. Additionally, Crime and Mystery genres often complement each other, forming intriguing crime thriller stories. This exploration showcases filmmakers' creativity in blending genres to craft compelling and entertaining films.
+
+___
+
+### Audience Preference by Genre
+
+![production_by_genre pairs](./Analysis%20Visualizations/weighted_average_movie_rating_by_genre.png)
+
+Above we can see the weighted average rating each movie genre typically receives. Biographies stand out as the highest rated genre, followed be dramas and crime movies. However, all genres are fairly close in terms of average rating.
+
+Note that a weighted average was calculated by factoring in the percentile each movie ranked in in terms of the number of reviews it received. Movies in the higher percentiles within each genre had a larger impact on the aveerage rating than those with fewer. Additionally, only genres within the top ten most found in the analysis of movie production by genre were considered.
+<br />
+
+### Audience Reception by Genre Pairs
+
+![genre_pairs_ratings](./Analysis%20Visualizations/heatmap_of_weighted_average_movie_rating_by_genre_pairs.png)
+
+This heatmap shows the average ratings of the top 10 movie genres produced by pairs. We can see that most pairs are fairly close in rating, with biographies standing out as among the highest rated, other than its pair with Horror, which is typically the most disliked movie genre.
+
+The same weighting system was used to calculate average rating for pairs of genres as singlular movie genre weighting.
+
+___
+
+### Movie Length and Reception
+
 
 
