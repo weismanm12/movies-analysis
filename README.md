@@ -8,7 +8,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ---
 ## Process
 
-### 1. Extracting and cleaning raw data with Python
+### 1. Extracting, Cleaning, and Validating Raw Data with Python
    - Raw data was extracted from IMDb dataset, cleaned, and transformed into a format optimal for analysis of movie data.
 ### 2. Creating PostgreSQL database and loading cleaned data
    - After the data was properly transformed and normalized, a PostgreSQl database called `movies` was created for optimal storage and retrieval
@@ -16,7 +16,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
    - The newly created movies database was analyzed using SQL to extract the necessary data and Python to transform/visualize results
 
 ---
-## Extracting and Cleaning Raw Data with Python
+## Extracting, Cleaning, and Validating Raw Data with Python
 
 The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [raw data cleaning file](raw_data_cleaning.ipynb).
 
@@ -33,6 +33,21 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 - **title.ratings**: Contains the average rating and number of votes for records in the "titles" Table. This is a one-to-one optional relationship, meaning an individual title could have a max of one record in the "ratings" table, but could not have one as well. Since this is a one-to-one relationship, these two tables should be combined.
 - **title.akas**: Contains all alternative titles for a local region/country for each unique record in "title.basics" table.
 
+### Cleaning, Validation and Transformation Process
+Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning notebook](raw_data_cleaning.ipynb)
+
+### Transformed ER Model
+
+See a visual representation of the structure of the transformed data. This also serves as the structure of the PostgreSQL database created in the next step.
+
+![updated_model](updated_model.png)
+
+#### Table Descriptions
+- **movies**: Contains all movies in IMDb database and relevant information about each movie.
+- **actors**: Stores information related to actors in movies.
+- **movie_cast**: Mapping table between actors and movies tables identifying all actors in every movie.
+- **genres**: Contains all distinct genres a movie can be tagged as.
+- **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 ---
 ## Creating PostgreSQL database and Loading Cleaned Data
 ---
