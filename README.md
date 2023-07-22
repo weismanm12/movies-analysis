@@ -1,4 +1,4 @@
-# imdb-analysis
+# IMDb-analysis
 
 ## Introduction
 In this project I will be extracting public movie data from the popular movie and tv show database IMDb. IMDb contains information related to movies, tv shows, actors, actresses, and other visual entertainment content. For the purpose of this project I will be focusing exclusively on data related to movies.
