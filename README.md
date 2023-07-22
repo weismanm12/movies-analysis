@@ -64,16 +64,19 @@ Please note that the below analysis does not contain any code. If you would like
 
 The movies contained in the `movies` database contains an extension number of movies, however, the awareness and accessibility of these films very greatly. This awareness/accessibility can be measured by the number of reviews a movie has received. See a histogram showing this distribution below.
 
-![hist of movie ratings](./Analysis%20Visualizations/histogram_of_number_of_ratings.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/histogram_of_number_of_ratings.png" alt="hist of movie ratings">
+</p>
 
 It can be seen that there is extreme variance in the number of ratings a movie has received, with the majority have less than 500 ratings. However, we are most interested in well-known productions on the opposite end of the spectrum. For this reason, only movies **within the top 10\% in terms of the number of ratings a movie has received partitioned by the decade will be considered**. Partitioning by the decade helps account for the older movies receiving less ratings than newer movies.
 
 ___
 
 ### Movie Production Over Time
-<br />
 
-![movie_production](./Analysis%20Visualizations/movies_released_by_year.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/movies_released_by_year.png" alt="movie_production">
+</p>
 
 The line chart depicts movie production trends over time, highlighting significant developments around 1915, minimal change until the millennium, a steep decline during the Great Depression in 1929, and exponential growth from the 2000s. Notably, the COVID-19 pandemic caused a slight dip in 2020, impacting movie production in the subsequent years, which is gradually recovering to pre-pandemic levels.
 
@@ -81,14 +84,19 @@ ___
 
 ### Movie Production by Genre
 
-![production_by_genre](./Analysis%20Visualizations/movies_released_by_genre.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/movies_released_by_genre.png" alt="production_by_genre">
+</p>
 
 Genre production analysis reveals interesting insights into the movie industry's diversity. Drama leads with 28.1%, followed by Comedy (16.1%) and Action (9.1%). Crime and Romance genres hold nearly identical shares at 9.0% and 8.6%, respectively. Thriller and Adventure occupy significant portions with 7.8% and 6.4% each. Horror and Mystery equally share 6.4% of the film industry. Lastly, Biography contributes 3.0% to the cinematic world. These percentages showcase the filmmakers' diverse use of genres and creative abilities.
+
 <br />
 
 ### Movies Production by Genre Pairs
 
-![production_by_genre pairs](./Analysis%20Visualizations/movies_released_by_genre_pairs.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/movies_released_by_genre_pairs.png" alt="production_by_genre pairs">
+</p>
 
 Any movie can have multiple genres, creating subgenres which consist of combinations of individual genres. Above we can see the popularity of these pairs in movie production. Among these, Drama frequently pairs with Romance, Comedy, and Thriller genres, creating engaging narratives. Additionally, Crime and Mystery genres often complement each other, forming intriguing crime thriller stories. This exploration showcases filmmakers' creativity in blending genres to craft compelling and entertaining films.
 
@@ -96,16 +104,21 @@ ___
 
 ### Audience Preference by Genre
 
-![production_by_genre pairs](./Analysis%20Visualizations/weighted_average_movie_rating_by_genre.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/weighted_average_movie_rating_by_genre.png" alt="production_by_genre pairs">
+</p>
 
 Above we can see the weighted average rating each movie genre typically receives. Biographies stand out as the highest rated genre, followed be dramas and crime movies. However, all genres are fairly close in terms of average rating.
 
 Note that a weighted average was calculated by factoring in the percentile each movie ranked in in terms of the number of reviews it received. Movies in the higher percentiles within each genre had a larger impact on the aveerage rating than those with fewer. Additionally, only genres within the top ten most found in the analysis of movie production by genre were considered.
+
 <br />
 
 ### Audience Reception by Genre Pairs
 
-![genre_pairs_ratings](./Analysis%20Visualizations/heatmap_of_weighted_average_movie_rating_by_genre_pairs.png)
+<p align="center">
+  <img src="./Analysis%20Visualizations/heatmap_of_weighted_average_movie_rating_by_genre_pairs.png" alt="genre_pairs_ratings">
+</p>
 
 This heatmap shows the average ratings of the top 10 movie genres produced by pairs. We can see that most pairs are fairly close in rating, with biographies standing out as among the highest rated, other than its pair with Horror, which is typically the most disliked movie genre.
 
@@ -115,5 +128,33 @@ ___
 
 ### Movie Length and Reception
 
+<p align="center">
+  <img src="./Analysis%20Visualizations/distribution_of_movie_ratings_by_length_in_minutes.png" alt="length_vs_rating">
+</p>
 
+The scatterplot indicates a weak positive correlation (correlation coefficient of 0.28) between movie length and average rating, implying that longer movies tend to receive slightly higher ratings on average. However, correlation does not imply causation, and other factors like genre and cast may influence ratings. The majority of movies fall within the 1-3 hour length, and the correlation mainly applies to movies in this range.
+
+___
+
+### Most Favored Actors
+
+<p align="center">
+  <img src="./Analysis%20Visualizations/top_rated_movie_actors.png" alt="popular_actors">
+</p>
+
+This bar chart reveals the actors in which the movies the individuals appear in have the highest average rating. Toshirô Mifune tops the list with an average rating of 7.71, followed by Leonardo DiCaprio in second place with a rating of 7.42. The remaining actors share similar average ratings, with Charles Laughton and Walter Brennan tied for third at 7.20. James Stewart, Anthony Quinn, Ingrid Bergman, Claude Rains, Brad Pitt, and Jean Arthur also receive consistently high ratings, ranging from 7.12 to 7.16, indicating widespread audience appreciation for their performances.
+
+Note that this visualization was filtered to only contain well-known actors in American Cinema. A list was scraped from this article ranking the [top 1000 Actors and Actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
+
+<br />
+
+### Longest Tenured Actors
+
+<p align="center">
+  <img src="./Analysis%20Visualizations/most_individual_acting_credits.png" alt="most_acting_credits">
+</p>
+
+This visualization shows the actors with the most acting roles. Robert De Niro leads with 86 credits, followed closely by Bruce Willis (85) and John Wayne (84). Nicolas Cage and Samuel L. Jackson also have impressive numbers (83 and 73 credits). Many other actors have substantial credits, highlighting their prolific careers and contributions to the film industry.
+
+This list was also filtered for well known actors in American Cinema using the list from the [top 1000 Actors and Actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
 
