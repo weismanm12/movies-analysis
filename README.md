@@ -11,7 +11,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ### 1. Extracting, Cleaning, and Validating Raw Data with Python
    - Raw data was extracted from IMDb dataset, cleaned, and transformed into a format optimal for analysis of movie data.
 ### 2. Creating PostgreSQL database and loading cleaned data
-   - After the data was properly transformed and normalized, a PostgreSQl database called `movies` was created for optimal storage and retrieval
+   - After the data was properly transformed and normalized, a PostgreSQL database called `movies` was created for optimal storage and retrieval
 ### 3. Analyzing PostgeSQL database via SQL and Python
    - The newly created movies database was analyzed using SQL to extract the necessary data and Python to transform/visualize results
 
