@@ -110,7 +110,7 @@ ___
 
 Above we can see the weighted average rating each movie genre typically receives. Biographies stand out as the highest rated genre, followed be dramas and crime movies. However, all genres are fairly close in terms of average rating.
 
-Note that a weighted average was calculated by factoring in the percentile each movie ranked in in terms of the number of reviews it received. Movies in the higher percentiles within each genre had a larger impact on the aveerage rating than those with fewer. Additionally, only genres within the top ten most found in the analysis of movie production by genre were considered.
+Note that a weighted average was calculated by factoring in the percentile each movie ranked in in terms of the number of reviews it received. Movies in the higher percentiles within each genre had a larger impact on the aveerage rating than those with fewer. Additionally, only genres within the top ten most produced (found in the analysis of movie production by genre) were considered.
 
 <br />
 
