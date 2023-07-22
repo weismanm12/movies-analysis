@@ -5,7 +5,7 @@
 2. [Process](#process)
 3. [Extracting, Cleaning and Validating Raw Data with Python](#cleaning)
 4. [Creating PostgreSQL Database and Loading Cleaned Data](#database-creation-loading)
-5. [nalyzing Movies Database via SQL and Python](#analysis)
+5. [Analyzing Movies Database via SQL and Python](#analysis)
 
 ## Introduction
 <a name="introduction"><a/>
