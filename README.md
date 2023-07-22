@@ -68,7 +68,9 @@ To view more details about these tables and their respective columns see the [up
 ## Creating PostgreSQL Database and Loading Cleaned Data
 <a name="database-creation-loading"><a/>
 
-After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [database creation script](database_creation_script.sql). The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [data loading Jupyter Notebook](data_loading.ipynb).
+After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [database creation script](database_creation_script.sql). 
+
+The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [data loading Jupyter Notebook](data_loading.ipynb).
 
 ---
 ## Analyzing Movies Database via SQL and Python
