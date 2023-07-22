@@ -1,6 +1,10 @@
 # IMDb-analysis
 
+## Table of Contents
+1. [Introduction](#introduction)
+
 ## Introduction
+<a name="introduction"><a/>
 In this project I will be extracting public movie data from the popular movie and tv show database IMDb. IMDb contains information related to movies, tv shows, actors, actresses, and other visual entertainment content. For the purpose of this project I will be focusing exclusively on data related to movies.
 
 The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) is publicaly available for non-commercial use on IMDb's website. In this project, I extracted, cleaned, and normalized this data and created a PostgreSQL database called "movies" to store this data locally. I then performed analysis to find trends in movie production, audience reception, and actor likeness.
@@ -63,7 +67,7 @@ After the raw data was thoroughly cleaned and transformed, a PostgreSQL database
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
-Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code, see the** [analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/analysis.ipynb). Additionally, all visualtions can be found in the [analysis visualizations folder](Analysis%Visualizations) and all datasets can be found in the [analysis datasets folder](Analysis%Datasets).
+Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/analysis.ipynb). Additionally, all visualtions can be found in the [analysis visualizations folder](Analysis%Visualizations) and all datasets can be found in the [analysis datasets folder](Analysis%Datasets).
 
 ### Selecting a Sample Dataset
 
