@@ -18,7 +18,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ---
 ## Extracting, Cleaning, and Validating Raw Data with Python
 
-The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [raw data cleaning Jupyter Notebook](raw_data_cleaning.ipynb).
+The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [raw data cleaning Jupyter Notebook]([raw_data_cleaning.ipynb](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data)).
 
 ### Raw Data ER Model
 
@@ -36,7 +36,7 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 To view more details about these tables and their respective columns see the [raw data dictionary](raw_data_dictionary.ipynb).
 
 ### Cleaning, Validation and Transformation Process
-Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning Jupyter Notebook](raw_data_cleaning.ipynb).
+Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning Jupyter Notebook]([raw_data_cleaning.ipynb](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data)).
 
 ### Transformed ER Model
 
@@ -51,7 +51,7 @@ See a visual representation of the structure of the transformed data. This also 
 - **genres**: Contains all distinct genres a movie can be tagged as.
 - **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 
-To view more details about these tables and their respective columns see the [transformed data dictionary](transformed_data_dictionary.ipynb).
+To view more details about these tables and their respective columns see the [updated data dictionary](updated_data_dictionary.ipynb).
 
 ---
 ## Creating PostgreSQL Database and Loading Cleaned Data
@@ -63,7 +63,7 @@ After the raw data was thoroughly cleaned and transformed, a PostgreSQL database
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
-Please note that the below analysis does not contain any code. If you would like to see the extended analysis including the SQL and Python code, see the [analysis Jupyter Notebook](analysis.ipynb). Additionally, all visualtions can be found in the [analysis visualizations folder](Analysis%Visualizations) and all datasets can be found in the [analysis datasets folder](Analysis%Datasets).
+Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code, see the [analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/analysis.ipynb)**. Additionally, all visualtions can be found in the [analysis visualizations folder](Analysis%Visualizations) and all datasets can be found in the [analysis datasets folder](Analysis%Datasets).
 
 ### Selecting a Sample Dataset
 
