@@ -158,3 +158,14 @@ This visualization shows the actors with the most acting roles. Robert De Niro l
 
 This list was also filtered for well known actors in American Cinema using the list from the [top 1000 Actors and Actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
 
+___
+
+### Finding the Most Acclaimed Movies of All Time
+
+<p align="center">
+  <img src="./Analysis%20Visualizations/top_rated_movies_of_all_time.png" alt="top_movies">
+</p>
+
+The top rated movies of IMDb can be seen in this visualization. "The Shawshank Redemption" and "The Godfather," are the two highest rated films, with ratings of 9.3 and 9.2, respectively. The remaining films follow close behing, with multiple films receiving average ratings of 9.0 and the rest receiving ratings just under 9.0 (note that ties were broken by votes received). It can also be seen that films from five different decades made the top 15, showing the excellence of film making over time.
+
+Note that only films among the highest in terms of the number of ratings received were considered. The sample data used within this data was further filtered to only include those within the top 1% of ratings in their respective decade, ensuring that only widely admired films were considered.
