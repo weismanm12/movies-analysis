@@ -33,6 +33,8 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 - **title.ratings**: Contains the average rating and number of votes for records in the "titles" Table. This is a one-to-one optional relationship, meaning an individual title could have a max of one record in the "ratings" table, but could not have one as well. Since this is a one-to-one relationship, these two tables should be combined.
 - **title.akas**: Contains all alternative titles for a local region/country for each unique record in "title.basics" table.
 
+To view more details about these tables and their respective columns see the [raw data dictionary](raw_data_dictionary.ipynb).
+
 ### Cleaning, Validation and Transformation Process
 Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning Jupyter Notebook](raw_data_cleaning.ipynb).
 
@@ -49,7 +51,7 @@ See a visual representation of the structure of the transformed data. This also 
 - **genres**: Contains all distinct genres a movie can be tagged as.
 - **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 
-To view more details about these tables and their respective columns see the [Original ER Model section of the raw data cleaning Jupyter Notebook](raw_data_cleaning.ipynb#original-er-model)
+To view more details about these tables and their respective columns see the [transformed data dictionary](transformed_data_dictionary.ipynb).
 
 ---
 ## Creating PostgreSQL Database and Loading Cleaned Data
