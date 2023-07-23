@@ -29,7 +29,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ## Extracting, Cleaning, and Validating Raw Data with Python
 <a name="cleaning"><a/>
 
-The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [raw data cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
+The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
 
 ### Raw Data ER Model
 
@@ -44,10 +44,10 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 - **title.ratings**: Contains the average rating and number of votes for records in the "titles" Table. This is a one-to-one optional relationship, meaning an individual title could have a max of one record in the "ratings" table, but could not have one as well. Since this is a one-to-one relationship, these two tables should be combined.
 - **title.akas**: Contains all alternative titles for a local region/country for each unique record in "title.basics" table.
 
-To view more details about these tables and their respective columns see the [raw data dictionary](raw_data_dictionary.ipynb).
+To view more details about these tables and their respective columns see the [Raw Data Dictionary](raw_data_dictionary.ipynb).
 
 ### Cleaning, Validation and Transformation Process
-Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [raw data cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
+Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
 
 ### Transformed ER Model
 
@@ -62,15 +62,15 @@ See a visual representation of the structure of the transformed data. This also 
 - **genres**: Contains all distinct genres a movie can be tagged as.
 - **movie_genres**: Mapping table between movies and genres table identifying all genres a movie has.
 
-To view more details about these tables and their respective columns see the [updated data dictionary](updated_data_dictionary.ipynb).
+To view more details about these tables and their respective columns see the [Updated Data Dictionary](updated_data_dictionary.ipynb).
 
 ---
 ## Creating PostgreSQL Database and Loading Cleaned Data
 <a name="database-creation-loading"><a/>
 
-After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [database creation script](database_creation_script.sql). 
+After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [Database Creation Script](database_creation_script.sql). 
 
-The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [data loading Jupyter Notebook](data_loading.ipynb).
+The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [Data Loading Jupyter Notebook](data_loading.ipynb).
 
 ---
 ## Analyzing Movies Database via SQL and Python
@@ -78,7 +78,7 @@ The cleaned data was then loaded into the movies database via sqlalchemy. See th
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
-Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/analysis.ipynb). Additionally, all visualtions can be found in the [analysis visualizations folder](Analysis%Visualizations) and all datasets can be found in the [analysis datasets folder](Analysis%Datasets).
+Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [Analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/analysis.ipynb). Additionally, all visualtions can be found in the [Analysis Visualizations folder](Analysis%Visualizations) and all datasets can be found in the [Analysis Datasets folder](Analysis%Datasets).
 
 ### Selecting a Sample Dataset
 
@@ -164,7 +164,7 @@ ___
 
 This bar chart reveals the actors in which the movies the individuals appear in have the highest average rating. Toshirô Mifune tops the list with an average rating of 7.71, followed by Leonardo DiCaprio in second place with a rating of 7.42. The remaining actors share similar average ratings, with Charles Laughton and Walter Brennan tied for third at 7.20. James Stewart, Anthony Quinn, Ingrid Bergman, Claude Rains, Brad Pitt, and Jean Arthur also receive consistently high ratings, ranging from 7.12 to 7.16, indicating widespread audience appreciation for their performances.
 
-Note that this visualization was filtered to only contain well-known actors in American Cinema. A list was scraped from [this article ranking the top 1000 Actors and Actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
+Note that this visualization was filtered to only contain well-known actors in American Cinema. A list was scraped from [this article ranking the top 1000 actors and actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail) on the IMDb website.
 
 <br />
 
@@ -176,7 +176,7 @@ Note that this visualization was filtered to only contain well-known actors in A
 
 This visualization shows the actors with the most acting roles. Robert De Niro leads with 86 credits, followed closely by Bruce Willis (85) and John Wayne (84). Nicolas Cage and Samuel L. Jackson also have impressive numbers (83 and 73 credits). Many other actors have substantial credits, highlighting their prolific careers and contributions to the film industry.
 
-This list was also filtered for well known actors in American Cinema using the list from the [top 1000 Actors and Actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
+This list was also filtered for well known actors in American Cinema using the list of the [top 1000 actors and actresses](https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=detail).
 
 ___
 
