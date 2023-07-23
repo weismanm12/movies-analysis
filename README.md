@@ -1,4 +1,4 @@
-# IMDb-analysis
+# Analyzing Movie Data From IMDb
 
 ## Table of Contents
 1. [Introduction](#introduction)
