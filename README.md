@@ -112,7 +112,7 @@ Genre production analysis reveals interesting insights into the movie industry's
 
 <br />
 
-### Movies Production by Genre Pairs
+### Movie Production by Genre Pairs
 
 <p align="center">
   <img src="./Analysis%20Visualizations/movies_released_by_genre_pairs.png" alt="production_by_genre pairs">
