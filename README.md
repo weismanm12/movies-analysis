@@ -159,7 +159,7 @@ ___
 ### Most Favored Actors
 
 <p align="center">
-  <img src="./Analysis%20Visualizations/top_rated_movie_actors.png" alt="popular_actors">
+  <img src="./Analysis%20Visualizations/top_rated_actors.png" alt="popular_actors">
 </p>
 
 This bar chart reveals the actors in which the movies the individuals appear in have the highest average rating. Toshirô Mifune tops the list with an average rating of 7.71, followed by Leonardo DiCaprio in second place with a rating of 7.42. The remaining actors share similar average ratings, with Charles Laughton and Walter Brennan tied for third at 7.20. James Stewart, Anthony Quinn, Ingrid Bergman, Claude Rains, Brad Pitt, and Jean Arthur also receive consistently high ratings, ranging from 7.12 to 7.16, indicating widespread audience appreciation for their performances.
