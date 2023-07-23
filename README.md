@@ -29,7 +29,7 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 ## Extracting, Cleaning, and Validating Raw Data with Python
 <a name="cleaning"><a/>
 
-The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
+The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
 
 ### Raw Data ER Model
 
@@ -47,7 +47,7 @@ See the conceptual relational model of all the files extracted from IMDb. Note t
 To view more details about these tables and their respective columns see the [Raw Data Dictionary](raw_data_dictionary.ipynb).
 
 ### Cleaning, Validation and Transformation Process
-Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
+Though this data comes from a reputable source, thorough cleaning and validation was needed. The data contained in these files was cleaned and validated by filtering out non-movie related data, removing invalid data, and ensuring no duplicates where necessary. The data was also transformed by removing unnecessary columns, combining certain tables, and unnesting array data types using associative tables. To view the full process, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
 
 ### Transformed ER Model
 
@@ -78,7 +78,7 @@ The cleaned data was then loaded into the movies database via sqlalchemy. See th
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
-Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [Movies Analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/imdb-analysis/blob/main/movies_analysis.ipynb). Additionally, all visualtions can be found in the [Analysis Visualizations folder](Analysis%Visualizations) and all datasets can be found in the [Analysis Datasets folder](Analysis%Datasets).
+Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [Movies Analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/movies_analysis.ipynb). Additionally, all visualtions can be found in the [Analysis Visualizations folder](Analysis%Visualizations) and all datasets can be found in the [Analysis Datasets folder](Analysis%Datasets).
 
 ### Selecting a Sample Dataset
 
