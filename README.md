@@ -8,6 +8,8 @@
 5. [Creating PostgreSQL Database and Loading Cleaned Data](#database-creation-loading)
 6. [Analyzing Movies Database via SQL and Python](#analysis)
 
+---
+
 <a name="introduction"><a/>
 ## Introduction
 
