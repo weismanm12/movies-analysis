@@ -2,21 +2,30 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Process](#process)
-3. [Extracting, Cleaning and Validating Raw Data with Python](#cleaning)
-4. [Creating PostgreSQL Database and Loading Cleaned Data](#database-creation-loading)
-5. [Analyzing Movies Database via SQL and Python](#analysis)
+2. [Technologies and Skills](#tech-skills)
+3. [Process](#process)
+4. [Extracting, Cleaning and Validating Raw Data with Python](#cleaning)
+5. [Creating PostgreSQL Database and Loading Cleaned Data](#database-creation-loading)
+6. [Analyzing Movies Database via SQL and Python](#analysis)
 
-## Introduction
 <a name="introduction"><a/>
+## Introduction
 
 In this project I will be extracting public movie data from the popular movie and tv show database IMDb. IMDb contains information related to movies, tv shows, actors, actresses, and other visual entertainment content. For the purpose of this project I will be focusing exclusively on data related to movies.
 
 The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) is publicaly available for non-commercial use on IMDb's website. In this project, I extracted, cleaned, and normalized this data and created a PostgreSQL database called "movies" to store this data locally. I then performed analysis to find trends in movie production, audience reception, and actor likeness.
 
 ---
-## Process
+
+<a name="tech-skills"><a/>
+## Technologies and Skills
+**Technologies/Packages**:  SQL (MySQL), Python, Pandas, NumPy, SQLAlchemy, Power BI, DAX
+**Skills**: Data Modeling, Database Development, Data Wrangling, Data Cleaning, ETL, Exploratory Data Analysis (EDA), Dashboarding/Data Visualization
+
+---
+
 <a name="process"><a/>
+## Process
 
 ### 1. Extracting, Cleaning, and Validating Raw Data with Python
    - Raw data was extracted from IMDb dataset, cleaned, and transformed into a format optimal for analysis of movie data.
@@ -26,8 +35,9 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
    - The newly created movies database was analyzed using SQL to extract the necessary data and Python to transform/visualize results
 
 ---
-## Extracting, Cleaning, and Validating Raw Data with Python
+
 <a name="cleaning"><a/>
+## Extracting, Cleaning, and Validating Raw Data with Python
 
 The first step of this project involved extracted the datasets from IMDb, cleaning the data, and structuring the data in a format optimized for storage in a SQL database and analysis. Below is an abbrevated version of this process. To view the full process along with the Python code, see the [Raw Data Cleaning Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/raw_data_cleaning.ipynb#loading-and-viewing-raw-data).
 
@@ -65,16 +75,18 @@ See a visual representation of the structure of the transformed data. This also 
 To view more details about these tables and their respective columns see the [Updated Data Dictionary](updated_data_dictionary.ipynb).
 
 ---
-## Creating PostgreSQL Database and Loading Cleaned Data
+
 <a name="database-creation-loading"><a/>
+## Creating PostgreSQL Database and Loading Cleaned Data
 
 After the raw data was thoroughly cleaned and transformed, a PostgreSQL database called `movies` was created for storage. To view the SQL code, view the [Database Creation Script](database_creation_script.sql). 
 
 The cleaned data was then loaded into the movies database via sqlalchemy. See the this process in the [Data Loading Jupyter Notebook](data_loading.ipynb).
 
 ---
-## Analyzing Movies Database via SQL and Python
+
 <a name="analysis"><a/>
+## Analyzing Movies Database via SQL and Python
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
