@@ -93,7 +93,7 @@ The cleaned data was then loaded into the movies database via sqlalchemy. See th
 
 The newly created `movies` database containing information related to movies and actors was then explored to find insights. This analysis revealed trends in movie production, genre popularity, correlation between movie attributes and average rating, and actor popularity. See an abbreviated version of this analysis below.
 
-Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [Movies Analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/movies_analysis.ipynb). Additionally, all visualtions can be found in the [Analysis Visualizations folder](Analysis%Visualizations) and all datasets can be found in the [Analysis Datasets folder](Analysis%Datasets).
+Please note that the below analysis does not contain any code. **If you would like to see the extended analysis including the SQL and Python code**, see the [Movies Analysis Jupyter Notebook](https://nbviewer.org/github/weismanm12/movies-analysis/blob/main/movies_analysis.ipynb). Additionally, all visualizations can be found in the [Analysis Visualizations folder](Analysis%Visualizations) and all datasets can be found in the [Analysis Datasets folder](Analysis%Datasets).
 
 ### Selecting a Sample Dataset
 
