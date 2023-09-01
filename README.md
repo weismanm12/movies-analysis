@@ -21,9 +21,9 @@ The [data related to IMDb](https://developer.imdb.com/non-commercial-datasets/) 
 
 <a name="tech-skills"><a/>
 ## Technologies and Skills
-**Technologies/Packages**:  SQL (MySQL), Python, Pandas, NumPy, SQLAlchemy, Power BI, DAX
+**Technologies/Packages**:  SQL (MySQL), Python (Pandas, NumPy, SQLAlchemy, Matplotlib, Seaborn)
 
-**Skills**: Data Modeling, Database Development, Data Wrangling, Data Cleaning, ETL, Exploratory Data Analysis (EDA), Dashboarding/Data Visualization
+**Skills**: Data Modeling, Database Development, Data Wrangling, Data Cleaning, ETL, Exploratory Data Analysis (EDA), Data Visualization
 
 ---
 
